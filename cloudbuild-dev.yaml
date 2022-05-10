@@ -3,9 +3,9 @@ steps:
   - name: "gcr.io/cloud-builders/docker"  #gcr is the google container registry
     id: "build"
     args:
-      - "build"
+      - "Build"
       - "-t"
-      - "gcr.io/$PROJECT_ID/stedi-tests-Micahel: latest"
+      - "gcr.io/$PROJECT_ID/stedi-tests-micahel: latest"
       - "."
   - name: "gcr.io/cloud-builders/docker"
     id: push
