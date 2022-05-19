@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: michael-stedi
-          image: gcr.io/gcr.io/funky-flex/stedi-michael:latest
+          image: gcr.io/gcr.io/project-funky-flex/stedi-michael:latest
           ports:
             - containerPort: 3000
           resources:
