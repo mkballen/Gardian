@@ -5,17 +5,17 @@ steps:
     args:
       - "build"
       - "-t"
-      - "gcr.io/$PROJECT_ID/stedi-tests-michael:latest"
+      - "gcr.io/gcr.io/funky-flex/stedi-michael:latest"
       - "."
       
   - name: "gcr.io/cloud-builders/docker"
     id: push
     args:
       - "push"
-      - "gcr.io/$PROJECT_ID/stedi-tests-michael:latest"
+      - "gcr.io/gcr.io/funky-flex/stedi-michael:latest"
   
   - name: "gcr.io/cloud-builders/docker"
     id: run
     args:
       - "run"
-      - "gcr.io/$PROJECT_ID/stedi-tests-michael:latest"
+      - "gcr.io/gcr.io/funky-flex/stedi-michael:latest"
