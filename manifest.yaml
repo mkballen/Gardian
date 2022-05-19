@@ -16,15 +16,17 @@ spec:
     spec:
       containers:
         - name: michael-stedi
-          image: gcr.io/gcr.io/project-funky-flex/stedi-michael:latest
+          image: gcr.io/project-funky-flex/stedi-michael:latest
+          command: ["npm"]
+          args: ["run","start"]
           ports:
             - containerPort: 3000
           resources:
             limits:
-              cpu: ".5"
+              cpu: ".125"
               memory: "500Mi"
             requests:
-              cpu: ".25"
+              cpu: ".1"
               memory: "250Mi"
           livenessProbe:
             httpGet:
