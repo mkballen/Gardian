@@ -13,6 +13,15 @@ steps:
     args:
       - "push"
       - "gcr.io/project-funky-flex/stedi-michael:latest"
+  - name:
+    id: Deploy
+    args:
+    - run
+    - --filename=manifest.yaml
+    - --image=gcr.io/project-funky-flex/stedi-michael:latest
+    - --location=us-east1-b
+    - --output=/tmp/outputdev
+    - --cluster=cluster-1
   
   - name: "gcr.io/cloud-builders/docker"
     id: run
