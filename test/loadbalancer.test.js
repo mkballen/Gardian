@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import assert from 'assert';
+import assert, { doesNotMatch } from 'assert';
 //import { response } from 'express';
 
 it ('Should get hello', async ()=>{
@@ -7,3 +7,4 @@ it ('Should get hello', async ()=>{
     const text = await response.text();
     assert.equal(text,"Hello");
 })
+done()
