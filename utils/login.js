@@ -12,7 +12,7 @@ const login = async (userName, password) => {
         }
     };
 
-    const apiResponse = await fetch( 'http://localhost:3000/login',options);
+    const apiResponse = await fetch( 'http://34.86.170.196s/login',options);
     const loginResponse = await apiResponse.text();
 
     return loginResponse;
