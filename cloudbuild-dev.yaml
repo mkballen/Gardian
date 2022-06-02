@@ -14,7 +14,7 @@ steps:
       - "push"
       - "gcr.io/project-funky-flex/stedi-michael:latest"
 
-  - name: 'gcr.io/$PROJECT_ID/stedy-michael:latest'
+  - name: 'gcr.io/cloud-builders/gke-deploy'
     id: Deploy
     args:
     - run
