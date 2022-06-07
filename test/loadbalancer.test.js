@@ -7,4 +7,3 @@ it ('Should get hello', async ()=>{
     const text = await response.text();
     assert.equal(text,"Hello");
 })
-done()
