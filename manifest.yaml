@@ -5,7 +5,7 @@ kind: Deployment
 metadata:
   name: michael-stedi
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: michael-stedi
@@ -23,7 +23,7 @@ spec:
             - containerPort: 3000
           resources:
             limits:
-              cpu: ".125"
+              cpu: ".1"
               memory: "500Mi"
             requests:
               cpu: ".1"
